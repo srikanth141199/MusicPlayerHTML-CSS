@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srikanth's Music Player</title>
+    <!-- Linking CSS File -->
+    <link rel="stylesheet" type="text/css" href="main2.css">
+
+    <!-- Font awesome Script -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
+    <script src="https://kit.fontawesome.com/72dd262b75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Nav Bar starts, it contains the app name, search bar, notification and profile-->
+    <header class="navbar">
+        <nav>
+            <div class="logo">
+                <div><i class="fas fa-headphones nav-logo"></i></div>
+                <div class="nav-hero">
+                    <h3 class="name">Srikanth</h3>
+                    <h5 class="tag">Studio</h5>
+                </div>
+            </div>
+            <div class="fav">Favorites</div>
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search" />
+                <i class="fas fa-microphone"></i>
+            </div>
+            <div class="notification"><i class="fas bell fa-bell"></i></div>
+            <div class="notification-profile"><i class="fas fa-user-circle"></i></div>
+        </nav>
+    </header>
+
+    <!--Main contains the body between nav bar and footer-->
+    <main>
+        <div class="display-width main-section">
+            <!--carousel to display 5 different sliding images-->
+            <header class="carousel">
+                <div id="slider">
+                    <input type="radio" name="slider" id="s1" checked>
+                    <input type="radio" name="slider" id="s2">
+                    <input type="radio" name="slider" id="s3">
+                    <input type="radio" name="slider" id="s4">
+                    <input type="radio" name="slider" id="s5">
+
+                    <label for="s1" id="slide1"><img src="./media/carousel/carousel5.jpg" alt=""></label>
+                    <label for="s2" id="slide2"><img src="./media/carousel/carousel6.jpg" alt=""></label>
+                    <label for="s3" id="slide3"><img src="./media/carousel/carousel8.jpg" alt=""></label>
+                    <label for="s4" id="slide4"><img src="./media/carousel/carousel9.jpg" alt=""></label>
+                    <label for="s5" id="slide5"><img src="./media/carousel/carousel10.jpg" alt=""></label>
+                </div>
+            </header>
+            <section class="latest-release">
+                <h3 class="lr-heading">Latest Release</h3>
+                <div class="lr-details">
+                    <div class="lr-song-card">
+                        <div class="lr-image-container">
+                            <img class="lr-image" src="./media/latest-release/lr1.jpg" alt="latest-release">
+                            <div class="overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="lr-song-details">
+                            <div class="lr-song-details-left">
+                                <h3 class="lr-song-name">Lover</h3>
+                                <h5 class="lr-song-date">Oct 20, 2023</h5>
+                            </div>
+                            <div class="lr-song-details-right">
+                                <label class="lr-drop-down">
+                                    <i class="fas fa-ellipsis"></i>
+                                    <input type="checkbox">
+                                    <div class="dropdown-content">
+                                        <p><i class="fa-solid fa-music"></i> Play Now</p>
+                                        <p><i class="fa-solid fa-plus"></i> Add to Queue</p>
+                                        <p><i class="fa-solid fa-bars"></i> Add to Playlist</p>
+                                        <p><i class="fa-solid fa-circle-info"></i> Get Info</p>
+                                    </div>
+                                </label>
+                                <p class="lr-song-length">4:44</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lr-song-card">
+                        <div class="lr-image-container">
+                            <img class="lr-image" src="./media/latest-release/lr1.jpg" alt="latest-release">
+                            <div class="overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="lr-song-details">
+                            <div class="lr-song-details-left">
+                                <h3 class="lr-song-name">Lover</h3>
+                                <h5 class="lr-song-date">Oct 20, 2023</h5>
+                            </div>
+                            <div class="lr-song-details-right">
+                                <label class="lr-drop-down">
+                                    <i class="fas fa-ellipsis"></i>
+                                    <input type="checkbox">
+                                    <div class="dropdown-content">
+                                        <p><i class="fa-solid fa-music"></i> Play Now</p>
+                                        <p><i class="fa-solid fa-plus"></i> Add to Queue</p>
+                                        <p><i class="fa-solid fa-bars"></i> Add to Playlist</p>
+                                        <p><i class="fa-solid fa-circle-info"></i> Get Info</p>
+                                    </div>
+                                </label>
+                                <p class="lr-song-length">4:44</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lr-song-card">
+                        <div class="lr-image-container">
+                            <img class="lr-image" src="./media/latest-release/lr1.jpg" alt="latest-release">
+                            <div class="overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="lr-song-details">
+                            <div class="lr-song-details-left">
+                                <h3 class="lr-song-name">Lover</h3>
+                                <h5 class="lr-song-date">Oct 20, 2023</h5>
+                            </div>
+                            <div class="lr-song-details-right">
+                                <label class="lr-drop-down">
+                                    <i class="fas fa-ellipsis"></i>
+                                    <input type="checkbox">
+                                    <div class="dropdown-content">
+                                        <p><i class="fa-solid fa-music"></i> Play Now</p>
+                                        <p><i class="fa-solid fa-plus"></i> Add to Queue</p>
+                                        <p><i class="fa-solid fa-bars"></i> Add to Playlist</p>
+                                        <p><i class="fa-solid fa-circle-info"></i> Get Info</p>
+                                    </div>
+                                </label>
+                                <p class="lr-song-length">4:44</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lr-song-card">
+                        <div class="lr-image-container">
+                            <img class="lr-image" src="./media/latest-release/lr1.jpg" alt="latest-release">
+                            <div class="overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="lr-song-details">
+                            <div class="lr-song-details-left">
+                                <h3 class="lr-song-name">Lover</h3>
+                                <h5 class="lr-song-date">Oct 20, 2023</h5>
+                            </div>
+                            <div class="lr-song-details-right">
+                                <label class="lr-drop-down">
+                                    <i class="fas fa-ellipsis"></i>
+                                    <input type="checkbox">
+                                    <div class="dropdown-content">
+                                        <p><i class="fa-solid fa-music"></i> Play Now</p>
+                                        <p><i class="fa-solid fa-plus"></i> Add to Queue</p>
+                                        <p><i class="fa-solid fa-bars"></i> Add to Playlist</p>
+                                        <p><i class="fa-solid fa-circle-info"></i> Get Info</p>
+                                    </div>
+                                </label>
+                                <p class="lr-song-length">4:44</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="popular-artists">
+                <h3 class="lr-heading">Popular Artists</h3>
+                <div class="pa">
+                    <div class="pa-details">
+                        <a href="single-artist.html" class="pa-link">
+                            <img class="pa-image" src="./media/popular-artists/aw1.jpg" alt="">
+                            <i class="fas fa-play play-button"></i>
+                        </a>
+                        <h4 class="pa-name">Alan Walker</h4>
+                    </div>
+                    <div class="pa-details">
+                        <a href="single-artist.html" class="pa-link">
+                            <img class="pa-image" src="./media/popular-artists/maroon51.jpg" alt="">
+                            <i class="fas fa-play play-button"></i>
+                        </a>
+                        <h4 class="pa-name">Maroon 5</h4>
+                    </div>
+                    <div class="pa-details">
+                        <a href="single-artist.html" class="pa-link">
+                            <img class="pa-image" src="./media/popular-artists/ts1.jpg" alt="">
+                            <i class="fas fa-play play-button"></i>
+                        </a>
+                        <h4 class="pa-name">Tylor Swift</h4>
+                    </div>
+                    <div class="pa-details">
+                        <a href="single-artist.html" class="pa-link">
+                            <img class="pa-image" src="./media/popular-artists/bts1.jpg" alt="">
+                            <i class="fas fa-play play-button"></i>
+                        </a>
+                        <h4 class="pa-name">BTS</h4>
+                    </div>
+                    <div class="pa-details">
+                        <a href="single-artist.html" class="pa-link">
+                            <img class="pa-image" src="./media/popular-artists/dl1.jpg" alt="">
+                            <i class="fas fa-play play-button"></i>
+                        </a>
+                        <h4 class="pa-name">Dua Lipa</h4>
+                    </div>
+                </div>
+            </section>
+            <section class="genre">
+                <div class="genre-container">
+                    <div class="genre-content">
+                        <img src="./media/genre/genre4.jpg" alt="" class="genre-img">
+                    </div>
+                    <div class="genre-content">
+                        <img src="./media/genre/vibe1.jpg" alt="VIBE" class="genre-img">
+                        <p class="genre-name">VIBE</p>
+                    </div>
+                    <div class="genre-content">
+                        <img src="./media/genre/pop1.jpg" alt="POP" class="genre-img">
+                        <p class="genre-name">POP</p>
+                    </div>
+                    <div class="genre-content">
+                        <img src="./media/genre/retro1.jpg" alt="RETRO" class="genre-img">
+                        <p class="genre-name">RETRO</p>
+                    </div>
+                    <div class="genre-content">
+                        <img src="./media/genre/rock3.jpg" alt="ROCK" class="genre-img">
+                        <p class="genre-name">ROCK</p>
+                    </div>
+                    <div class="genre-content">
+                        <img src="./media/genre/gym1.jpg" alt="GYM" class="genre-img">
+                        <p class="genre-name">GYM</p>
+                    </div>
+                </div>
+            </section>
+            <section class="theme">
+                <div class="theme-container">
+                    <img src="./media/theme/party2.jpg" alt="Party" class="theme-image">
+                    <p class="theme-content">PARTY</p>
+                </div>
+                <div class="theme-container">
+                    <img src="./media/theme/travel1.jpg" alt="TRAVEL" class="theme-image">
+                    <p class="theme-content">TRAVEL</p>
+                </div>
+                <div class="theme-container">
+                    <img src="./media/theme/electronics1.jpg" alt="ELECTRONICS" class="theme-image">
+                    <p class="theme-content">ELECTRONICS</p>
+                </div>
+            </section>
+            <section class="latest-english">
+                <h3 class="lr-heading">Latest English</h3>
+                <div class="latest-english-content">
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe1.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe2.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe3.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe4.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe5.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe6.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                </div>
+            </section>
+            <section class="latest-english">
+                <h3 class="lr-heading">Latest Hindi</h3>
+                <div class="latest-english-content">
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe1.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe2.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe3.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe4.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe5.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                    <div class="latest-english-card-container">
+                        <img src="./media/Songs/songe6.jpg" />
+                        <p>Onism</p>
+                        <p>OCT 29, 2023</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!--aside section contains the Playlist and queue items-->
+        <aside class="display-width aside-section">
+            <header>
+                <div>Playlist</div>
+                <div><span>Queue</span> 
+                    <label class="lr-drop-down">
+                        <i class="fa-solid fa-caret-down"></i>
+                        <input type="checkbox">
+                        <div class="dropdown-content queue-font">
+                            <p><i class="fa-solid fa-music"></i> Play List</p>
+                            <p><i class="fa-solid fa-plus"></i> Favorite Songs</p>
+                        </div>
+                    </label>
+                </div>
+            </header>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">01</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">02</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">03</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">04</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">05</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">06</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">07</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">08</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">09</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">10</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">11</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+            <div class="playlist-container">
+                <div class="playlist-item">
+                    <div class="playlist-item-container">
+                        <div class="number">12</div>
+                        <img src="./media/Songs/songe1.jpg" alt="">
+                        <div class="playlist-item-details">
+                            <h4>Song Name</h4>
+                            <h4>Singer Name</h4>
+                        </div>
+                    </div>
+                    <div class="playlist-icon"><i class="fa-regular fa-heart"></i></div>
+                </div>
+            </div>
+        </aside>
+        
+    </main>
+    <!--Footer displays the song playing contains the input bar to manage the time of song and other options-->
+    <footer class="footer">
+        <div class="footer-song-details">
+            <div>
+                <img src="./media/popular-artists/ts1.jpg" alt="" class="footer-img">
+            </div>
+            <div class="footer-details">
+                <h3 class="footer-song-name">Lover</h3>
+                <h5 class="footer-singer-name">Taylor Swift</h5>
+            </div>
+            <div class="footer-icon">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </div>
+
+        <div id="player">
+
+            <div id="player-control">
+                <div><i class="fas fa-random" style="color:white;"></i></div>
+                <div><i class="fas fa-step-backward" style="color:white;"></i></div>
+                <div><i class="far fa-pause-circle" style="font-size: 2rem; color:white;"></i></div>
+                <div><i class="fas fa-step-forward" style="color:white;"></i></div>
+                <div><i class="fas fa-redo" style="color:white;"></i></div>
+            </div>
+
+            <div id="player-slider-container">
+                <div class="subtitle">
+                    0:00
+                </div>
+
+                <input type="range" min="0" max="100" value="25">
+
+                <div class="subtitle">
+                    4:44
+                </div>
+            </div>
+        </div>
+
+        <div class="options">
+            <div><i class="fa-solid fa-list-ul"></i></div>
+            <div><i class="fa-solid fa-computer"></i></div>
+            <div><i class="fa-solid fa-volume-high"></i></div>
+            <div><input type="range" min="0" max="100" value="50" class="slider" id="volume-slider"></div>
+            <div><i class="fa-solid fa-maximize"></i></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
